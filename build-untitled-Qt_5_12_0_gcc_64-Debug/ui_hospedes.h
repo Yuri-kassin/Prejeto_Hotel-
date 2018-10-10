@@ -13,7 +13,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListView>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -22,8 +21,8 @@ class Ui_Hospedes
 {
 public:
     QLabel *label;
-    QPushButton *pushButton;
-    QListView *listView;
+    QPushButton *btNovoHospede;
+    QLabel *lbPessoa0;
 
     void setupUi(QDialog *Hospedes)
     {
@@ -34,12 +33,12 @@ public:
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(0, 0, 791, 551));
         label->setPixmap(QPixmap(QString::fromUtf8(":/imagens/fundo-vermelho.jpg")));
-        pushButton = new QPushButton(Hospedes);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(330, 500, 161, 25));
-        listView = new QListView(Hospedes);
-        listView->setObjectName(QString::fromUtf8("listView"));
-        listView->setGeometry(QRect(170, 90, 256, 231));
+        btNovoHospede = new QPushButton(Hospedes);
+        btNovoHospede->setObjectName(QString::fromUtf8("btNovoHospede"));
+        btNovoHospede->setGeometry(QRect(330, 500, 161, 25));
+        lbPessoa0 = new QLabel(Hospedes);
+        lbPessoa0->setObjectName(QString::fromUtf8("lbPessoa0"));
+        lbPessoa0->setGeometry(QRect(20, 30, 111, 41));
 
         retranslateUi(Hospedes);
 
@@ -50,7 +49,8 @@ public:
     {
         Hospedes->setWindowTitle(QApplication::translate("Hospedes", "Dialog", nullptr));
         label->setText(QString());
-        pushButton->setText(QApplication::translate("Hospedes", "Cadastrar Novo Hospede", nullptr));
+        btNovoHospede->setText(QApplication::translate("Hospedes", "Cadastrar Novo Hospede", nullptr));
+        lbPessoa0->setText(QApplication::translate("Hospedes", "TextLabel", nullptr));
     } // retranslateUi
 
 };

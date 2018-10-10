@@ -27,12 +27,16 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     hospedes.cpp \
-    addhospede.cpp
+    addhospede.cpp \
+    fila.cpp \
+    no.cpp
 
 HEADERS += \
         mainwindow.h \
     hospedes.h \
-    addhospede.h
+    addhospede.h \
+    fila.h \
+    no.h
 
 FORMS += \
         mainwindow.ui \

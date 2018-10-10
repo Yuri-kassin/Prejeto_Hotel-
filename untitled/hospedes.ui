@@ -29,7 +29,7 @@
     <pixmap resource="imagens.qrc">:/imagens/fundo-vermelho.jpg</pixmap>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btNovoHospede">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -42,14 +42,17 @@
     <string>Cadastrar Novo Hospede</string>
    </property>
   </widget>
-  <widget class="QListView" name="listView">
+  <widget class="QLabel" name="lbPessoa0">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>90</y>
-     <width>256</width>
-     <height>231</height>
+     <x>20</x>
+     <y>30</y>
+     <width>111</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>

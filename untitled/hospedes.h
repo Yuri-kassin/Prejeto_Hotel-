@@ -15,6 +15,9 @@ public:
     explicit Hospedes(QWidget *parent = 0);
     ~Hospedes();
 
+private slots:
+    void on_btNovoHospede_clicked();
+
 private:
     Ui::Hospedes *ui;
 };

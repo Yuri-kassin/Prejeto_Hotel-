@@ -25,10 +25,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    hospedes.cpp \
+    addhospede.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    hospedes.h \
+    addhospede.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    hospedes.ui \
+    addhospede.ui
+
+RESOURCES += \
+    imagens.qrc

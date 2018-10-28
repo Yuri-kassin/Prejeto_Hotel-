@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>imagens/fundo.jpg</file>
         <file>imagens/fundo-vermelho.jpg</file>
+        <file>imagens/woman.png</file>
     </qresource>
 </RCC>

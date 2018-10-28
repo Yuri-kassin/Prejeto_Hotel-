@@ -22,3 +22,14 @@ void MainWindow::on_botao1_clicked()
     H->exec();
 
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+
+}
+
+void MainWindow::on_label_2_linkActivated(const QString &link)
+{
+     ui->stackedWidget->setCurrentIndex(1);
+}

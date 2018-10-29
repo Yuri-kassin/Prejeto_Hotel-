@@ -1,6 +1,7 @@
 #include "hospedes.h"
 #include "ui_hospedes.h"
 #include "addhospede.h"
+#include<iostream>
 Hospedes::Hospedes(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Hospedes)
@@ -15,11 +16,11 @@ Hospedes::~Hospedes()
 
 void Hospedes::on_btNovoHospede_clicked()
 {
-    close();
-//    AddHospede *A = new AddHospede;
-//    A->setModal(true);
-//    A->show();
-//    A->exec();
+   QString nome = ui->textNome->toPlainText();
+   QString idade = ui->textIdade->toPlainText();
+   QString RG = ui->textRPG->toPlainText();
 
+   ui->lbteste->setText(nome);
 
+    //close();
 }

@@ -27,9 +27,9 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     hospedes.cpp \
-    addhospede.cpp \
     fila.cpp \
-    no.cpp
+    no.cpp \
+    addhospede.cpp
 
 HEADERS += \
         mainwindow.h \

@@ -29,14 +29,16 @@ SOURCES += \
     hospedes.cpp \
     fila.cpp \
     no.cpp \
-    addhospede.cpp
+    addhospede.cpp \
+    arqaddhosp.cpp
 
 HEADERS += \
         mainwindow.h \
     hospedes.h \
     addhospede.h \
     fila.h \
-    no.h
+    no.h \
+    arqaddhosp.hpp
 
 FORMS += \
         mainwindow.ui \

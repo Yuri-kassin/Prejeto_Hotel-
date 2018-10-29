@@ -29,7 +29,16 @@ void MainWindow::on_pushButton_clicked()
 
 }
 
-void MainWindow::on_label_2_linkActivated(const QString &link)
+
+void MainWindow::on_CadastroButton_clicked()
+{
+//    ui->stackedWidget->setCurrentIndex(1);
+    Hospedes *H = new Hospedes;
+    H->setModal(true);
+    H->exec();
+}
+
+void MainWindow::on_ListButton_clicked()
 {
      ui->stackedWidget->setCurrentIndex(1);
 }

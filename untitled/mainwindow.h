@@ -20,7 +20,9 @@ private slots:
 
     void on_pushButton_clicked();
 
-    void on_label_2_linkActivated(const QString &link);
+    void on_CadastroButton_clicked();
+
+    void on_ListButton_clicked();
 
 private:
     Ui::MainWindow *ui;

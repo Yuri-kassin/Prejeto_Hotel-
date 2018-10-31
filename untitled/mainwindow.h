@@ -16,13 +16,15 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_botao1_clicked();
 
-    void on_pushButton_clicked();
 
     void on_CadastroButton_clicked();
 
     void on_ListButton_clicked();
+
+    void on_CheckButton_clicked();
+
+    void on_VoltarButton_clicked();
 
 private:
     Ui::MainWindow *ui;

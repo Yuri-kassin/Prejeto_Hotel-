@@ -29,20 +29,20 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>50</y>
-     <width>54</width>
+     <x>10</x>
+     <y>20</y>
+     <width>91</width>
      <height>17</height>
     </rect>
    </property>
    <property name="text">
-    <string>Nome:</string>
+    <string>Primeiro Nome:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>50</x>
      <y>100</y>
      <width>41</width>
      <height>17</height>
@@ -55,8 +55,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>150</y>
+     <x>60</x>
+     <y>140</y>
      <width>31</width>
      <height>17</height>
     </rect>
@@ -68,8 +68,8 @@
   <widget class="QTextEdit" name="textNome">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>40</y>
+     <x>110</x>
+     <y>10</y>
      <width>104</width>
      <height>31</height>
     </rect>
@@ -78,7 +78,7 @@
   <widget class="QTextEdit" name="textIdade">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>110</x>
      <y>90</y>
      <width>104</width>
      <height>31</height>
@@ -88,8 +88,8 @@
   <widget class="QTextEdit" name="textRPG">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>140</y>
+     <x>110</x>
+     <y>130</y>
      <width>104</width>
      <height>31</height>
     </rect>
@@ -147,7 +147,7 @@
     <string>Quantos dias o cliente ira passar?</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton">
+  <widget class="QRadioButton" name="R15Button">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -171,6 +171,29 @@
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ultimo nome:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textSobrenome">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>104</width>
+     <height>31</height>
+    </rect>
    </property>
   </widget>
  </widget>

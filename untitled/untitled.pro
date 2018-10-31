@@ -38,7 +38,8 @@ HEADERS += \
     addhospede.h \
     fila.h \
     no.h \
-    arqaddhosp.hpp
+    arqaddhosp.hpp \
+    listahosp.hpp
 
 FORMS += \
         mainwindow.ui \

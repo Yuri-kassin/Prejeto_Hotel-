@@ -11,17 +11,21 @@ private:
     string Nome;
     string Idade;
     string RG;
+    string sobrenome;
+    int dia;
 public:
-    ArqAddHosp(string Nome, string Idade, string RG){
+    ArqAddHosp(string Nome, string Idade, string RG,string sobrenome, int dia){
         this->Nome = Nome;
         this->Idade = Idade;
         this->RG = RG;
+        this->sobrenome = sobrenome;
+        this->dia = dia;
         Gravar();
     }
     void Gravar(){
         ofstream arq;
-        arq.open("aquivo.txt");
-  //      arq<<Nome<<" "<<Idade<<" "<<RG<<" "<<endl;
+        arq.open("aquivo.txt",ios::app);
+        arq<<Nome<<" "<<Idade<<" "<<RG<<" "<<0<<endl;
         arq.close();
         cout<<"kkk eae man"<<endl;
     }

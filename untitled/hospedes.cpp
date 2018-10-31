@@ -3,6 +3,7 @@
 #include "addhospede.h"
 #include"arqaddhosp.hpp"
 #include<iostream>
+#include<QMessageBox>
 
 using namespace std;
 
@@ -23,11 +24,24 @@ void Hospedes::on_btNovoHospede_clicked()
    QString nome = ui->textNome->toPlainText();
    QString idade = ui->textIdade->toPlainText();
    QString RG = ui->textRPG->toPlainText();
+   QString sobrenome = ui->textSobrenome->toPlainText();
+
    string Snome = nome.toStdString();
    string Sidade = idade.toStdString();
    string SRG = RG.toStdString();
-   ArqAddHosp x(Snome,Sidade,SRG);
-   ui->lbteste->setText(nome);
+   string SSobrenome = sobrenome.toStdString();
 
-    //close();
+   int dias = 0;
+   if(ui->R3Button->isCheckable()) dias = 3;
+   else if(ui->R7Button->isCheckable()) dias = 7;
+   else if(ui->R12Button->isCheckable()) dias = 12;
+   else if(ui->R15Button->isCheckable()) dias = 15;
+
+  if((dias != 0)){
+   ArqAddHosp x(Snome,Sidade,SRG,SSobrenome,dias);
+    close();
+  }
+  else{
+      QMessageBox::information(this,"ALERTA","preencha todos os campos");
+  }
 }

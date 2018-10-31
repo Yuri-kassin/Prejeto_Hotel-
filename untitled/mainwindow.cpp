@@ -13,21 +13,16 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_botao1_clicked()
-{
-    close();
-    Hospedes *H = new Hospedes;
-    H->setModal(true);
-    H->show();
-    H->exec();
+//void MainWindow::on_botao1_clicked()
+//{
+//    close();
+//    Hospedes *H = new Hospedes;
+//    H->setModal(true);
+//    H->show();
+//    H->exec();
 
-}
+//}
 
-void MainWindow::on_pushButton_clicked()
-{
-    ui->stackedWidget->setCurrentIndex(1);
-
-}
 
 
 void MainWindow::on_CadastroButton_clicked()
@@ -41,4 +36,14 @@ void MainWindow::on_CadastroButton_clicked()
 void MainWindow::on_ListButton_clicked()
 {
      ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWindow::on_CheckButton_clicked()
+{
+
+}
+
+void MainWindow::on_VoltarButton_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }

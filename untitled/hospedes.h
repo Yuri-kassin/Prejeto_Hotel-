@@ -2,7 +2,6 @@
 #define HOSPEDES_H
 
 #include <QDialog>
-
 namespace Ui {
 class Hospedes;
 }

@@ -1,21 +1,16 @@
 #ifndef ARVORE_HPP
 #define ARVORE_HPP
-
-
+#include "LDE.hpp"
 #include "No.hpp"
 #include "Coisa.hpp"
 #define MAX(a,b) (( (a) > (b) ) ? (a) : (b))
-//
-//#define Avore(tipo)\
-//        struct Arvore_##tipo{\
-//            tipo* raiz;\
-//    }
+
 
 using namespace std;
 template <typename T>
 class Arvore {
 private:
-
+    LDE<Coisa> odn;
     int n;
     No<T>*raiz;
     void edr(No<T>* r){
@@ -33,8 +28,9 @@ private:
             erd(r->Esqr);
 //            if(r->anterior)cout<<"anterior "<<**(r->anterior)<<endl;
             Coisa y = r->getonlyValor();
-            cout<<y.getnome()<<" ";
-            cout<<y.getNumero()<<endl;
+            odn.insere(y);
+            //ui->stackedWidget->setCurrentIndex(1);
+            //cout<<y.getNumero()<<endl;
             // cout << **r << endl;
 //            if(r->Esqr)cout<<"esquerda "<<**(r->Esqr)<<endl;
 //            if(r->Dirt)cout<<"direita "<<**(r->Dirt)<<endl;
@@ -51,8 +47,9 @@ public:
     Arvore():n(0),raiz(nullptr){
     }
 
-    void erd(){
+    LDE<Coisa> erdd(){
         erd(raiz);
+        return odn;
     }
 
 

@@ -25,9 +25,9 @@ public:
     void Gravar(){
         ofstream arq;
         arq.open("aquivo.txt",ios::app);
-        arq<<Nome<<" "<<Idade<<" "<<RG<<" "<<0<<endl;
+        arq<<Nome<<" "<<sobrenome<<" "<<RG<<" "<<Idade<<" "<<dia<<" "<<0<<" "<<"00"<<endl;
         arq.close();
-        cout<<"kkk eae man"<<endl;
+        cout<<"mais uma pessoa add"<<endl;
     }
 };
 

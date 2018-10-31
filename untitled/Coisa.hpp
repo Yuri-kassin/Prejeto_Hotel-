@@ -9,12 +9,14 @@ private:
     string primnome;
     string RG;
     string dias;
+    string idade;
     string check;
     string quarto;
 public:
-    Coisa(string primnome,string ultnome,string RG,string dias){
+    Coisa(string primnome,string ultnome,string idade,string RG,string dias){
         this->primnome = primnome;
         this->ultnome = ultnome;
+        this->idade = idade;
         this->RG = RG;
         this->dias = dias;
     }
@@ -25,6 +27,9 @@ public:
 
     string getUltnome(){
         return ultnome;
+    }
+    string getIdade(){
+        return idade;
     }
 
     string getRG(){

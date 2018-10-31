@@ -40,7 +40,9 @@ HEADERS += \
     Arvore.hpp \
     Coisa.hpp \
     LDE.hpp \
-    NoL.hpp
+    NoL.hpp \
+    NoQ.hpp \
+    Queue.hpp
 
 FORMS += \
         mainwindow.ui \

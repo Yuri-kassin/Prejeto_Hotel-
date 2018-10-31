@@ -27,8 +27,6 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     hospedes.cpp \
-    fila.cpp \
-    no.cpp \
     addhospede.cpp \
     arqaddhosp.cpp
 
@@ -36,10 +34,13 @@ HEADERS += \
         mainwindow.h \
     hospedes.h \
     addhospede.h \
-    fila.h \
-    no.h \
     arqaddhosp.hpp \
-    listahosp.hpp
+    listahosp.hpp \
+    No.hpp \
+    Arvore.hpp \
+    Coisa.hpp \
+    LDE.hpp \
+    NoL.hpp
 
 FORMS += \
         mainwindow.ui \

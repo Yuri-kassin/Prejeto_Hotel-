@@ -25,6 +25,12 @@ private slots:
 
     void on_VoltarButton_clicked();
 
+    void on_CheckinButton_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_BuscaButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

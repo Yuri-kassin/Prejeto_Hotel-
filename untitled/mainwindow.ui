@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="CadastroButton">
@@ -223,7 +223,7 @@ background-repeat: none;
      <widget class="QPushButton" name="BuscaButton">
       <property name="geometry">
        <rect>
-        <x>480</x>
+        <x>670</x>
         <y>80</y>
         <width>121</width>
         <height>25</height>
@@ -297,6 +297,16 @@ background-repeat: none;
         <y>131</y>
         <width>761</width>
         <height>341</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>80</y>
+        <width>104</width>
+        <height>31</height>
        </rect>
       </property>
      </widget>
@@ -491,6 +501,97 @@ background-repeat: none;
       </property>
       <property name="text">
        <string>Quarto:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>70</y>
+        <width>80</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>checkin</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>70</y>
+        <width>96</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>100</y>
+        <width>96</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>130</y>
+        <width>96</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>70</y>
+        <width>96</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_5">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>100</y>
+        <width>96</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_6">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>130</y>
+        <width>96</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>6</string>
       </property>
      </widget>
     </widget>

@@ -75,6 +75,7 @@ public:
             }
         }
         if(!atual || valor!=*(atual->valor))  return nullptr;
+        return nullptr;
     }
 
 
@@ -169,8 +170,8 @@ public:
         }
     }
 
-    void remove(T valor){
-        No<T>* x = busca(valor);
+    void remove(Coisa valor){
+        No<T>* x = busca(valor.getPrimNome());
         if(!x)
             return;
 

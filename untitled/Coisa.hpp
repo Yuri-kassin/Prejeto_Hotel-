@@ -19,6 +19,8 @@ public:
         this->idade = idade;
         this->RG = RG;
         this->dias = dias;
+        quarto = "00";
+        check = "0";
     }
 
     string getPrimNome(){

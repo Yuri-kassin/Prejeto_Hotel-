@@ -6,5 +6,5 @@ depois fazer as seguintes instruções dentro da pasta:
 
 $qmake-qt4 -project
 $qmake-qt4 untitled.pro
-make
-.untitled
+$make
+$.untitled

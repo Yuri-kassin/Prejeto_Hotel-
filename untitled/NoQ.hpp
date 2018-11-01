@@ -1,6 +1,6 @@
 #include <iostream>
-#ifndef FILA_DINAMICA_NO_HPP
-#define FILA_DINAMICA_NO_HPP
+#ifndef NOQ_HPP
+#define NOQ_HPP
 template <typename T>
 class Queue;
 template <typename T>

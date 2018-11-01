@@ -10,7 +10,7 @@ using namespace std;
 template <typename T>
 class Arvore {
 private:
-    LDE<Coisa> odn;
+    LDE<Coisa> *odn;
     int n;
     No<T>*raiz;
     void edr(No<T>* r){
@@ -28,7 +28,7 @@ private:
             erd(r->Esqr);
 //            if(r->anterior)cout<<"anterior "<<**(r->anterior)<<endl;
             Coisa y = r->getonlyValor();
-            odn.insere(y);
+            odn->insere(y);
             //ui->stackedWidget->setCurrentIndex(1);
             //cout<<y.getNumero()<<endl;
             // cout << **r << endl;
@@ -47,7 +47,8 @@ public:
     Arvore():n(0),raiz(nullptr){
     }
 
-    LDE<Coisa> erdd(){
+    LDE<Coisa>* erdd(){
+        odn = new LDE<Coisa>;
         erd(raiz);
         return odn;
     }

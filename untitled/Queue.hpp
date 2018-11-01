@@ -1,8 +1,8 @@
 #include <iostream>
 #include "NoQ.hpp"
 
-#ifndef FILA_DINAMICA_QUEUE_HPP
-#define FILA_DINAMICA_QUEUE_HPP
+#ifndef QUEUE_HPP
+#define QUEUE_HPP
 using namespace std;
 
 template <typename T>

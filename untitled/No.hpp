@@ -10,9 +10,9 @@ template <typename T>
 class No {
 private:
     T valor;
-    No<T>* anterior;
     No<T>* Esqr;
-    No<T>*Dirt;
+    No<T>* Dirt;
+    No<T>* anterior;
     No(T Valor): valor(Valor), Esqr(nullptr),Dirt(nullptr),anterior(nullptr){
     }
 public:

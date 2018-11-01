@@ -1,13 +1,14 @@
 #include <iostream>
 #include "NoL.hpp"
-
+#include<QApplication>
+#include<Coisa.hpp>
 #ifndef LDE_HPP
 #define LDE_HPP
 
 using namespace std;
 
 template <typename T>
-class LDE{
+class LDE {
     private:
         int n;
         NoL<T>* primeiro;
@@ -82,7 +83,7 @@ class LDE{
         return n;
     }
 
-    T interador(int valor){
+    Coisa interador(int valor){
             NoL<T> * atual = primeiro;
             for(int i=0; i<valor; i++){
                 atual = atual->proximo;

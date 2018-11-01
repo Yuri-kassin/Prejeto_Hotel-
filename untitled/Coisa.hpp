@@ -5,11 +5,11 @@
 class Coisa {
 
 private:
-    string ultnome;
     string primnome;
+    string ultnome;
+    string idade;
     string RG;
     string dias;
-    string idade;
     string check;
     string quarto;
 public:

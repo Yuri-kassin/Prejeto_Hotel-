@@ -32,10 +32,10 @@ void Hospedes::on_btNovoHospede_clicked()
    string SSobrenome = sobrenome.toStdString();
 
    int dias = 0;
-   if(ui->R3Button->isCheckable()) dias = 3;
-   else if(ui->R7Button->isCheckable()) dias = 7;
-   else if(ui->R12Button->isCheckable()) dias = 12;
-   else if(ui->R15Button->isCheckable()) dias = 15;
+   if(ui->R3Button->isChecked()) dias = 3;
+   else if(ui->R7Button->isChecked()) dias = 7;
+   else if(ui->R12Button->isChecked()) dias = 12;
+   else if(ui->R15Button->isChecked()) dias = 15;
 
   if((dias != 0)){
    ArqAddHosp x(Snome,Sidade,SRG,SSobrenome,dias);

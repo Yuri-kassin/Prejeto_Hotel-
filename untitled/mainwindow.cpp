@@ -72,6 +72,7 @@ void MainWindow::on_CadastroButton_clicked()
 void MainWindow::on_ListButton_clicked()
 {
     Coisa aux("","","","","");
+    Coisa aux2("","","","","");
     ui->textBrowser->setText("");
     ler();
 //    string g = "manteiga";
@@ -79,17 +80,19 @@ void MainWindow::on_ListButton_clicked()
 //    ui->textBrowser->setText(l+"\npao");
     lde = arv->erdd();
     cout<<"hmm"<<endl;
-    try{
-      Coisa aux=lde->interador(0);
-   }
-   catch(const std::exception& ex){
-   }
+//    try{
+//      Coisa aux=lde->interador(0);
+//   }
+//   catch(const std::exception& ex){
+//   }
     cout<<"n "<<lde->getN()<<endl;
     for(int i = 0; i<lde->getN(); i++){
          try{
             aux=lde->interador(i);
+            if((i-1) != -1) aux2=lde->interador(i-1);
         }
         catch(const std::exception& ex){
+            cout<<"bugado "<<aux.getPrimNome()<<endl;
         }
         cout<<"aqui?"<<endl;
         QString nome1 = QString::fromStdString(aux.getPrimNome());
@@ -105,7 +108,7 @@ void MainWindow::on_ListButton_clicked()
         else check = QString::fromStdString(aux.getQuarto());
         cout<<"opa meu consagrado"<<endl;
         cout<<aux.getPrimNome()<<" "<<aux.getUltnome()<<" "<<aux.getIdade()<<" "<<aux.getRG()<<" "<<aux.getDias()<<endl;
-        ui->textBrowser->append("nome: "+nome1+" sobrenome: "+nome2+" idade: "+idade+" RG: "+RG+" dias que ira passar: "+dias+" Check: "+check+" Quarto: "+quarto+"\n");
+       if(aux!=aux2) ui->textBrowser->append("nome: "+nome1+" sobrenome: "+nome2+" idade: "+idade+" RG: "+RG+" dias que ira passar: "+dias+" Check: "+check+" Quarto: "+quarto+"\n");
         cout<<"foi"<<endl;
     }
 
@@ -114,7 +117,7 @@ void MainWindow::on_ListButton_clicked()
 
 void MainWindow::on_CheckButton_clicked()
 {
-
+     ui->stackedWidget->setCurrentIndex(2);
 }
 
 void MainWindow::on_VoltarButton_clicked()

@@ -33,7 +33,7 @@ void ler(){
     arq.close();
 }
 
-void gravar(){
+void gravar(Coisa x, string quarto){
     Coisa aux("","","","","");
     Coisa aux2("","","","","");
     lde = new LDE<Coisa>;
@@ -50,7 +50,13 @@ void gravar(){
         }
 
         cout<<aux.getPrimNome()<<" "<<aux.getUltnome()<<" "<<aux.getIdade()<<" "<<aux.getRG()<<" "<<aux.getDias()<<endl;
-       if(aux!=aux2) arq<<aux.getPrimNome()<<" "<<aux.getUltnome()<<" "<<aux.getIdade()<<" "<<aux.getRG()<<" "<<aux.getDias()<<" "<<aux.getCheck()<<" "<<aux.getQuarto()<<endl;
+       if(aux!=aux2) {
+           if(aux == x){
+               aux.setCheck("1");
+               aux.setQuarto(quarto);
+           }
+           arq<<aux.getPrimNome()<<" "<<aux.getUltnome()<<" "<<aux.getIdade()<<" "<<aux.getRG()<<" "<<aux.getDias()<<" "<<aux.getCheck()<<" "<<aux.getQuarto()<<endl;
+       }
         cout<<"foi"<<endl;
     }
 
@@ -122,12 +128,13 @@ void MainWindow::on_ListButton_clicked()
         QString idade = QString::fromStdString(aux.getIdade());
         QString RG = QString::fromStdString(aux.getRG());
         QString dias = QString::fromStdString(aux.getDias());
-        QString check;
+        QString check = QString::fromStdString(aux.getCheck());
+        QString quarto = QString::fromStdString(aux.getQuarto());
         if(aux.getCheck()=="0") check = "checkin ainda nao realizado";
         else check = "checkin realizado";
-        QString quarto;
-        if(aux.getQuarto() == "00") quarto = "ainda nao possui";
-        else check = QString::fromStdString(aux.getQuarto());
+       // QString quarto;
+       // if(aux.getQuarto() == "00") quarto = "ainda nao possui";
+      //  else check = QString::fromStdString(aux.getQuarto());
         cout<<"opa meu consagrado"<<endl;
         cout<<aux.getPrimNome()<<" "<<aux.getUltnome()<<" "<<aux.getIdade()<<" "<<aux.getRG()<<" "<<aux.getDias()<<endl;
        if(aux!=aux2) ui->textBrowser->append("nome: "+nome1+" sobrenome: "+nome2+" idade: "+idade+" RG: "+RG+" dias que ira passar: "+dias+" Check: "+check+" Quarto: "+quarto+"\n");
@@ -169,7 +176,7 @@ void MainWindow::on_pushButton_8_clicked()
     x.setCheck("1");
     x.setQuarto(quarto);
     arv->insere(x);
-    gravar();
+    gravar(x,quarto);
      ui->stackedWidget->setCurrentIndex(0);
 }
 
@@ -188,5 +195,10 @@ void MainWindow::on_BuscaButton_clicked()
     QString quarto = QString::fromStdString(x.getQuarto());
      ui->textBrowser->setText("Resultado:\n nome: "+nome1+" sobrenome: "+nome2+" idade: "+idade+" RG: "+RG+" dias que ira passar: "+dias+" Check: "+check+" Quarto: "+quarto+"\n");
     //ui->textBrowser->setText("nome: "+nome);
+
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
 
 }

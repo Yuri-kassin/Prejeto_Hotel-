@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="CadastroButton">
@@ -72,7 +72,7 @@ background-repeat: none;
        <string>Cadastro</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="Hotel">
       <property name="geometry">
        <rect>
         <x>240</x>
@@ -182,14 +182,14 @@ background-repeat: none;
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>270</x>
+        <x>280</x>
         <y>330</y>
         <width>54</width>
         <height>20</height>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>Hotel</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_4">
@@ -231,19 +231,6 @@ background-repeat: none;
       </property>
       <property name="text">
        <string>Realizar uma busca</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="AttButton">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>80</y>
-        <width>80</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Atualizar</string>
       </property>
      </widget>
      <widget class="QPushButton" name="icon">
